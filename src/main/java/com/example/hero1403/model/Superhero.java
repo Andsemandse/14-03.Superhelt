@@ -5,15 +5,15 @@ public class Superhero {
     private String realName;
     private String heroName;
     private String BirthYear;
-    private String heroPower;
     private int id;
+    private String City;
 
-    public Superhero(String realName, String heroName, String BirthYear, String heroPower, int id) {
+    public Superhero(String realName, String heroName, String BirthYear, int id) {
         this.realName = realName;
         this.heroName = heroName;
         this.BirthYear = BirthYear;
-        this.heroPower = heroPower;
         this.id = id;
+
     }
 
 
@@ -32,12 +32,12 @@ public class Superhero {
 
 
 
-    public String getHeroPower() {
-        return heroPower;
+    public int getId() {
+        return id;
     }
 
-    public int getid() {
-        return id;
+    public String getCity() {
+        return City;
     }
 
 
@@ -57,17 +57,15 @@ public class Superhero {
 
 
 
-    public void setHeroPower(String heroPower) {
-        this.heroPower = heroPower;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
 
+    public void setCity(String City) {
+        this.City = City;
+    }
 
-
-    public Superhero(String realName, String heroName, String BirthYear) {
+    public Superhero(int Id, String realName, String heroName, String BirthYear) {
         this.heroName = heroName;
         this.realName = realName;
         this.BirthYear = BirthYear;
